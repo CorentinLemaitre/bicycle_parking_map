@@ -29,3 +29,6 @@ out center;
 
 Save the result as `bicycle_parking.geojson` to replace the old file.
 
+## Define the styling rules
+
+The goal is to define a style to show your 
