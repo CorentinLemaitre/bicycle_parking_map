@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis saveUser="Utilisateur" saveUserFull="corentin lemaitre" version="3.18.1-Zürich" saveDateTime="2021-11-09T17:40:17" projectname="Static map to show bicycle parking spot around a specific place">
+<qgis saveUser="Utilisateur" saveUserFull="corentin lemaitre" version="3.18.1-Zürich" saveDateTime="2021-11-09T18:11:45" projectname="Static map to show bicycle parking spot around a specific place">
   <homePath path=""/>
   <title>Static map to show bicycle parking spot around a specific place</title>
   <autotransaction active="0"/>
@@ -20,12 +20,12 @@
   </projectCrs>
   <layer-tree-group>
     <customproperties/>
-    <layer-tree-layer expanded="1" legend_exp="" legend_split_behavior="0" providerKey="ogr" source="localized:Eco Evenement/2021 Lieux culturel/Salle paul fort/bicycle_parking_map/bicycle_parking.geojson" checked="Qt::Checked" patch_size="-1,-1" name="bicycle_parking" id="bicycle_parking_de7ffb55_d59b_42cf_82a1_5625c66a559f">
+    <layer-tree-layer expanded="1" legend_exp="" legend_split_behavior="0" providerKey="ogr" source="localized:Eco Evenement/2021 Lieux culturel/Salle paul fort/bicycle_parking_map/bicycle_parking.geojson|subset=&quot;payment:account_cards&quot; is NULL" checked="Qt::Checked" patch_size="-1,-1" name="bicycle_parking" id="bicycle_parking_de7ffb55_d59b_42cf_82a1_5625c66a559f">
       <customproperties>
         <property key="cached_name" value="bicycle_parking"/>
       </customproperties>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" legend_exp="" legend_split_behavior="0" providerKey="ogr" source="localized:Eco Evenement/2021 Lieux culturel/Salle paul fort/bicycle_parking_map/ors-export-polygon.geojson" checked="Qt::Checked" patch_size="-1,-1" name="ors-export-polygon" id="ors_export_polygon_865707c4_9291_4396_ae45_e30c29590ef0">
+    <layer-tree-layer expanded="1" legend_exp="" legend_split_behavior="0" providerKey="ogr" source="localized:Eco Evenement/2021 Lieux culturel/Salle paul fort/bicycle_parking_map/ors-export-polygon.geojson" checked="Qt::Unchecked" patch_size="-1,-1" name="ors-export-polygon" id="ors_export_polygon_865707c4_9291_4396_ae45_e30c29590ef0">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="1" legend_exp="" legend_split_behavior="0" providerKey="ogr" source="./the_place_to_go.geojson|layername=the_place_to_go" checked="Qt::Unchecked" patch_size="-1,-1" name="circle Radius" id="the_place_to_go_dea3b1cb_6956_473a_afe6_d0af5d535581">
@@ -69,10 +69,10 @@
   <mapcanvas name="theMapCanvas" annotationsVisible="1">
     <units>meters</units>
     <extent>
-      <xmin>-174423.47465073748026043</xmin>
-      <ymin>5977812.33838683366775513</ymin>
-      <xmax>-172900.04585032712202519</xmax>
-      <ymax>5978863.10727441310882568</ymax>
+      <xmin>-173914.21771053515840322</xmin>
+      <ymin>5977928.33235494326800108</ymin>
+      <xmax>-173152.5033103299792856</xmax>
+      <ymax>5978453.71679873298853636</ymax>
     </extent>
     <rotation>0</rotation>
     <destinationsrs>
@@ -188,9 +188,9 @@
         <legendlayerfile visible="1" isInOverview="0" layerid="bicycle_parking_de7ffb55_d59b_42cf_82a1_5625c66a559f"/>
       </filegroup>
     </legendlayer>
-    <legendlayer checked="Qt::Checked" showFeatureCount="0" open="true" drawingOrder="-1" name="ors-export-polygon">
+    <legendlayer checked="Qt::Unchecked" showFeatureCount="0" open="true" drawingOrder="-1" name="ors-export-polygon">
       <filegroup open="true" hidden="false">
-        <legendlayerfile visible="1" isInOverview="0" layerid="ors_export_polygon_865707c4_9291_4396_ae45_e30c29590ef0"/>
+        <legendlayerfile visible="0" isInOverview="0" layerid="ors_export_polygon_865707c4_9291_4396_ae45_e30c29590ef0"/>
       </filegroup>
     </legendlayer>
     <legendlayer checked="Qt::Unchecked" showFeatureCount="0" open="true" drawingOrder="-1" name="circle Radius">
@@ -343,7 +343,7 @@
         <provider>
           <resampling maxOversampling="2" zoomedOutResamplingMethod="nearestNeighbour" enabled="false" zoomedInResamplingMethod="nearestNeighbour"/>
         </provider>
-        <rasterrenderer opacity="1" band="1" nodataColor="" alphaBand="-1" type="singlebandcolordata">
+        <rasterrenderer opacity="0.2" band="1" nodataColor="" alphaBand="-1" type="singlebandcolordata">
           <rasterTransparency/>
           <minMaxOrigin>
             <limits>None</limits>
@@ -369,7 +369,7 @@
         <ymax>47.22995099999999979</ymax>
       </extent>
       <id>bicycle_parking_de7ffb55_d59b_42cf_82a1_5625c66a559f</id>
-      <datasource>localized:Eco Evenement/2021 Lieux culturel/Salle paul fort/bicycle_parking_map/bicycle_parking.geojson</datasource>
+      <datasource>localized:Eco Evenement/2021 Lieux culturel/Salle paul fort/bicycle_parking_map/bicycle_parking.geojson|subset="payment:account_cards" is NULL</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -1715,118 +1715,15 @@
             <layer locked="0" enabled="1" pass="0" class="SvgMarker">
               <Option type="Map">
                 <Option value="0" name="angle" type="QString"/>
-                <Option value="165,191,221,255" name="color" type="QString"/>
+                <Option value="69,138,206,255" name="color" type="QString"/>
                 <Option value="0" name="fixedAspectRatio" type="QString"/>
                 <Option value="1" name="horizontal_anchor_point" type="QString"/>
                 <Option value="Mes icones/marker.svg" name="name" type="QString"/>
-                <Option value="0,0" name="offset" type="QString"/>
+                <Option value="0,-1.64705882352941191" name="offset" type="QString"/>
                 <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
                 <Option value="MM" name="offset_unit" type="QString"/>
-                <Option value="0,0,0,255" name="outline_color" type="QString"/>
-                <Option value="0.2" name="outline_width" type="QString"/>
-                <Option value="3x:0,0,0,0,0,0" name="outline_width_map_unit_scale" type="QString"/>
-                <Option value="MM" name="outline_width_unit" type="QString"/>
-                <Option name="parameters"/>
-                <Option value="diameter" name="scale_method" type="QString"/>
-                <Option value="6" name="size" type="QString"/>
-                <Option value="3x:0,0,0,0,0,0" name="size_map_unit_scale" type="QString"/>
-                <Option value="MM" name="size_unit" type="QString"/>
-                <Option value="1" name="vertical_anchor_point" type="QString"/>
-              </Option>
-              <prop k="angle" v="0"/>
-              <prop k="color" v="165,191,221,255"/>
-              <prop k="fixedAspectRatio" v="0"/>
-              <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="Mes icones/marker.svg"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_width" v="0.2"/>
-              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="parameters" v=""/>
-              <prop k="scale_method" v="diameter"/>
-              <prop k="size" v="6"/>
-              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="size_unit" v="MM"/>
-              <prop k="vertical_anchor_point" v="1"/>
-              <data_defined_properties>
-                <Option type="Map">
-                  <Option value="" name="name" type="QString"/>
-                  <Option name="properties"/>
-                  <Option value="collection" name="type" type="QString"/>
-                </Option>
-              </data_defined_properties>
-            </layer>
-            <layer locked="0" enabled="1" pass="0" class="SvgMarker">
-              <Option type="Map">
-                <Option value="0" name="angle" type="QString"/>
-                <Option value="255,0,0,255" name="color" type="QString"/>
-                <Option value="0" name="fixedAspectRatio" type="QString"/>
-                <Option value="1" name="horizontal_anchor_point" type="QString"/>
-                <Option value="Mes icones/Bicycle_park.svg" name="name" type="QString"/>
-                <Option value="0,-0.70588235294117629" name="offset" type="QString"/>
-                <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
-                <Option value="MM" name="offset_unit" type="QString"/>
-                <Option value="35,35,35,255" name="outline_color" type="QString"/>
-                <Option value="0" name="outline_width" type="QString"/>
-                <Option value="3x:0,0,0,0,0,0" name="outline_width_map_unit_scale" type="QString"/>
-                <Option value="MM" name="outline_width_unit" type="QString"/>
-                <Option name="parameters"/>
-                <Option value="diameter" name="scale_method" type="QString"/>
-                <Option value="2.47059" name="size" type="QString"/>
-                <Option value="3x:0,0,0,0,0,0" name="size_map_unit_scale" type="QString"/>
-                <Option value="MM" name="size_unit" type="QString"/>
-                <Option value="1" name="vertical_anchor_point" type="QString"/>
-              </Option>
-              <prop k="angle" v="0"/>
-              <prop k="color" v="255,0,0,255"/>
-              <prop k="fixedAspectRatio" v="0"/>
-              <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="Mes icones/Bicycle_park.svg"/>
-              <prop k="offset" v="0,-0.70588235294117629"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="35,35,35,255"/>
-              <prop k="outline_width" v="0"/>
-              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="parameters" v=""/>
-              <prop k="scale_method" v="diameter"/>
-              <prop k="size" v="2.47059"/>
-              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="size_unit" v="MM"/>
-              <prop k="vertical_anchor_point" v="1"/>
-              <data_defined_properties>
-                <Option type="Map">
-                  <Option value="" name="name" type="QString"/>
-                  <Option name="properties"/>
-                  <Option value="collection" name="type" type="QString"/>
-                </Option>
-              </data_defined_properties>
-            </layer>
-          </symbol>
-          <symbol name="1" type="marker" alpha="1" force_rhr="0" clip_to_extent="1">
-            <data_defined_properties>
-              <Option type="Map">
-                <Option value="" name="name" type="QString"/>
-                <Option name="properties"/>
-                <Option value="collection" name="type" type="QString"/>
-              </Option>
-            </data_defined_properties>
-            <layer locked="0" enabled="1" pass="0" class="SvgMarker">
-              <Option type="Map">
-                <Option value="0" name="angle" type="QString"/>
-                <Option value="165,191,221,255" name="color" type="QString"/>
-                <Option value="0" name="fixedAspectRatio" type="QString"/>
-                <Option value="1" name="horizontal_anchor_point" type="QString"/>
-                <Option value="Mes icones/marker.svg" name="name" type="QString"/>
-                <Option value="0,0" name="offset" type="QString"/>
-                <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
-                <Option value="MM" name="offset_unit" type="QString"/>
-                <Option value="0,0,0,255" name="outline_color" type="QString"/>
-                <Option value="0.2" name="outline_width" type="QString"/>
+                <Option value="253,253,253,255" name="outline_color" type="QString"/>
+                <Option value="0.4" name="outline_width" type="QString"/>
                 <Option value="3x:0,0,0,0,0,0" name="outline_width_map_unit_scale" type="QString"/>
                 <Option value="MM" name="outline_width_unit" type="QString"/>
                 <Option name="parameters"/>
@@ -1837,15 +1734,15 @@
                 <Option value="1" name="vertical_anchor_point" type="QString"/>
               </Option>
               <prop k="angle" v="0"/>
-              <prop k="color" v="165,191,221,255"/>
+              <prop k="color" v="69,138,206,255"/>
               <prop k="fixedAspectRatio" v="0"/>
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="Mes icones/marker.svg"/>
-              <prop k="offset" v="0,0"/>
+              <prop k="offset" v="0,-1.64705882352941191"/>
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_width" v="0.2"/>
+              <prop k="outline_color" v="253,253,253,255"/>
+              <prop k="outline_width" v="0.4"/>
               <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="parameters" v=""/>
@@ -1869,7 +1766,7 @@
                 <Option value="0" name="fixedAspectRatio" type="QString"/>
                 <Option value="1" name="horizontal_anchor_point" type="QString"/>
                 <Option value="Mes icones/Bicycle_park.svg" name="name" type="QString"/>
-                <Option value="0,-0.82352941176470584" name="offset" type="QString"/>
+                <Option value="-0.20588235294117649,-2.67647058823529393" name="offset" type="QString"/>
                 <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
                 <Option value="MM" name="offset_unit" type="QString"/>
                 <Option value="35,35,35,255" name="outline_color" type="QString"/>
@@ -1888,7 +1785,7 @@
               <prop k="fixedAspectRatio" v="0"/>
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="Mes icones/Bicycle_park.svg"/>
-              <prop k="offset" v="0,-0.82352941176470584"/>
+              <prop k="offset" v="-0.20588235294117649,-2.67647058823529393"/>
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="35,35,35,255"/>
@@ -1898,6 +1795,109 @@
               <prop k="parameters" v=""/>
               <prop k="scale_method" v="diameter"/>
               <prop k="size" v="2.88235"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" name="name" type="QString"/>
+                  <Option name="properties"/>
+                  <Option value="collection" name="type" type="QString"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol name="1" type="marker" alpha="1" force_rhr="0" clip_to_extent="1">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option value="" name="name" type="QString"/>
+                <Option name="properties"/>
+                <Option value="collection" name="type" type="QString"/>
+              </Option>
+            </data_defined_properties>
+            <layer locked="0" enabled="1" pass="0" class="SvgMarker">
+              <Option type="Map">
+                <Option value="0" name="angle" type="QString"/>
+                <Option value="69,138,206,255" name="color" type="QString"/>
+                <Option value="0" name="fixedAspectRatio" type="QString"/>
+                <Option value="1" name="horizontal_anchor_point" type="QString"/>
+                <Option value="Mes icones/marker.svg" name="name" type="QString"/>
+                <Option value="0,-2.05882352941176494" name="offset" type="QString"/>
+                <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
+                <Option value="MM" name="offset_unit" type="QString"/>
+                <Option value="253,253,253,255" name="outline_color" type="QString"/>
+                <Option value="0.4" name="outline_width" type="QString"/>
+                <Option value="3x:0,0,0,0,0,0" name="outline_width_map_unit_scale" type="QString"/>
+                <Option value="MM" name="outline_width_unit" type="QString"/>
+                <Option name="parameters"/>
+                <Option value="diameter" name="scale_method" type="QString"/>
+                <Option value="8.75" name="size" type="QString"/>
+                <Option value="3x:0,0,0,0,0,0" name="size_map_unit_scale" type="QString"/>
+                <Option value="MM" name="size_unit" type="QString"/>
+                <Option value="1" name="vertical_anchor_point" type="QString"/>
+              </Option>
+              <prop k="angle" v="0"/>
+              <prop k="color" v="69,138,206,255"/>
+              <prop k="fixedAspectRatio" v="0"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="Mes icones/marker.svg"/>
+              <prop k="offset" v="0,-2.05882352941176494"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="253,253,253,255"/>
+              <prop k="outline_width" v="0.4"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="parameters" v=""/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="8.75"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" name="name" type="QString"/>
+                  <Option name="properties"/>
+                  <Option value="collection" name="type" type="QString"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+            <layer locked="0" enabled="1" pass="0" class="SvgMarker">
+              <Option type="Map">
+                <Option value="0" name="angle" type="QString"/>
+                <Option value="255,0,0,255" name="color" type="QString"/>
+                <Option value="0" name="fixedAspectRatio" type="QString"/>
+                <Option value="1" name="horizontal_anchor_point" type="QString"/>
+                <Option value="Mes icones/Bicycle_park.svg" name="name" type="QString"/>
+                <Option value="-0.25735294117647062,-3.34558823529411775" name="offset" type="QString"/>
+                <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
+                <Option value="MM" name="offset_unit" type="QString"/>
+                <Option value="35,35,35,255" name="outline_color" type="QString"/>
+                <Option value="0" name="outline_width" type="QString"/>
+                <Option value="3x:0,0,0,0,0,0" name="outline_width_map_unit_scale" type="QString"/>
+                <Option value="MM" name="outline_width_unit" type="QString"/>
+                <Option name="parameters"/>
+                <Option value="diameter" name="scale_method" type="QString"/>
+                <Option value="3.60294" name="size" type="QString"/>
+                <Option value="3x:0,0,0,0,0,0" name="size_map_unit_scale" type="QString"/>
+                <Option value="MM" name="size_unit" type="QString"/>
+                <Option value="1" name="vertical_anchor_point" type="QString"/>
+              </Option>
+              <prop k="angle" v="0"/>
+              <prop k="color" v="255,0,0,255"/>
+              <prop k="fixedAspectRatio" v="0"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="Mes icones/Bicycle_park.svg"/>
+              <prop k="offset" v="-0.25735294117647062,-3.34558823529411775"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="parameters" v=""/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="3.60294"/>
               <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
@@ -1921,39 +1921,39 @@
             <layer locked="0" enabled="1" pass="0" class="SvgMarker">
               <Option type="Map">
                 <Option value="0" name="angle" type="QString"/>
-                <Option value="165,191,221,255" name="color" type="QString"/>
+                <Option value="69,138,206,255" name="color" type="QString"/>
                 <Option value="0" name="fixedAspectRatio" type="QString"/>
                 <Option value="1" name="horizontal_anchor_point" type="QString"/>
                 <Option value="Mes icones/marker.svg" name="name" type="QString"/>
-                <Option value="0,0" name="offset" type="QString"/>
+                <Option value="0,-2.47058823529411775" name="offset" type="QString"/>
                 <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
                 <Option value="MM" name="offset_unit" type="QString"/>
-                <Option value="0,0,0,255" name="outline_color" type="QString"/>
-                <Option value="0.2" name="outline_width" type="QString"/>
+                <Option value="253,253,253,255" name="outline_color" type="QString"/>
+                <Option value="0.4" name="outline_width" type="QString"/>
                 <Option value="3x:0,0,0,0,0,0" name="outline_width_map_unit_scale" type="QString"/>
                 <Option value="MM" name="outline_width_unit" type="QString"/>
                 <Option name="parameters"/>
                 <Option value="diameter" name="scale_method" type="QString"/>
-                <Option value="8" name="size" type="QString"/>
+                <Option value="10.5" name="size" type="QString"/>
                 <Option value="3x:0,0,0,0,0,0" name="size_map_unit_scale" type="QString"/>
                 <Option value="MM" name="size_unit" type="QString"/>
                 <Option value="1" name="vertical_anchor_point" type="QString"/>
               </Option>
               <prop k="angle" v="0"/>
-              <prop k="color" v="165,191,221,255"/>
+              <prop k="color" v="69,138,206,255"/>
               <prop k="fixedAspectRatio" v="0"/>
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="Mes icones/marker.svg"/>
-              <prop k="offset" v="0,0"/>
+              <prop k="offset" v="0,-2.47058823529411775"/>
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_width" v="0.2"/>
+              <prop k="outline_color" v="253,253,253,255"/>
+              <prop k="outline_width" v="0.4"/>
               <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="parameters" v=""/>
               <prop k="scale_method" v="diameter"/>
-              <prop k="size" v="8"/>
+              <prop k="size" v="10.5"/>
               <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
@@ -1972,7 +1972,7 @@
                 <Option value="0" name="fixedAspectRatio" type="QString"/>
                 <Option value="1" name="horizontal_anchor_point" type="QString"/>
                 <Option value="Mes icones/Bicycle_park.svg" name="name" type="QString"/>
-                <Option value="0,-0.94117647058823517" name="offset" type="QString"/>
+                <Option value="-0.30882352941176472,-4.01470588235294112" name="offset" type="QString"/>
                 <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
                 <Option value="MM" name="offset_unit" type="QString"/>
                 <Option value="35,35,35,255" name="outline_color" type="QString"/>
@@ -1981,7 +1981,7 @@
                 <Option value="MM" name="outline_width_unit" type="QString"/>
                 <Option name="parameters"/>
                 <Option value="diameter" name="scale_method" type="QString"/>
-                <Option value="3.29412" name="size" type="QString"/>
+                <Option value="4.32353" name="size" type="QString"/>
                 <Option value="3x:0,0,0,0,0,0" name="size_map_unit_scale" type="QString"/>
                 <Option value="MM" name="size_unit" type="QString"/>
                 <Option value="1" name="vertical_anchor_point" type="QString"/>
@@ -1991,7 +1991,7 @@
               <prop k="fixedAspectRatio" v="0"/>
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="Mes icones/Bicycle_park.svg"/>
-              <prop k="offset" v="0,-0.94117647058823517"/>
+              <prop k="offset" v="-0.30882352941176472,-4.01470588235294112"/>
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="35,35,35,255"/>
@@ -2000,7 +2000,7 @@
               <prop k="outline_width_unit" v="MM"/>
               <prop k="parameters" v=""/>
               <prop k="scale_method" v="diameter"/>
-              <prop k="size" v="3.29412"/>
+              <prop k="size" v="4.32353"/>
               <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
@@ -2024,39 +2024,39 @@
             <layer locked="0" enabled="1" pass="0" class="SvgMarker">
               <Option type="Map">
                 <Option value="0" name="angle" type="QString"/>
-                <Option value="165,191,221,255" name="color" type="QString"/>
+                <Option value="69,138,206,255" name="color" type="QString"/>
                 <Option value="0" name="fixedAspectRatio" type="QString"/>
                 <Option value="1" name="horizontal_anchor_point" type="QString"/>
                 <Option value="Mes icones/marker.svg" name="name" type="QString"/>
-                <Option value="0,0" name="offset" type="QString"/>
+                <Option value="0,-2.88235294117647101" name="offset" type="QString"/>
                 <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
                 <Option value="MM" name="offset_unit" type="QString"/>
-                <Option value="0,0,0,255" name="outline_color" type="QString"/>
-                <Option value="0.2" name="outline_width" type="QString"/>
+                <Option value="253,253,253,255" name="outline_color" type="QString"/>
+                <Option value="0.4" name="outline_width" type="QString"/>
                 <Option value="3x:0,0,0,0,0,0" name="outline_width_map_unit_scale" type="QString"/>
                 <Option value="MM" name="outline_width_unit" type="QString"/>
                 <Option name="parameters"/>
                 <Option value="diameter" name="scale_method" type="QString"/>
-                <Option value="9" name="size" type="QString"/>
+                <Option value="12.25" name="size" type="QString"/>
                 <Option value="3x:0,0,0,0,0,0" name="size_map_unit_scale" type="QString"/>
                 <Option value="MM" name="size_unit" type="QString"/>
                 <Option value="1" name="vertical_anchor_point" type="QString"/>
               </Option>
               <prop k="angle" v="0"/>
-              <prop k="color" v="165,191,221,255"/>
+              <prop k="color" v="69,138,206,255"/>
               <prop k="fixedAspectRatio" v="0"/>
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="Mes icones/marker.svg"/>
-              <prop k="offset" v="0,0"/>
+              <prop k="offset" v="0,-2.88235294117647101"/>
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_width" v="0.2"/>
+              <prop k="outline_color" v="253,253,253,255"/>
+              <prop k="outline_width" v="0.4"/>
               <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="parameters" v=""/>
               <prop k="scale_method" v="diameter"/>
-              <prop k="size" v="9"/>
+              <prop k="size" v="12.25"/>
               <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
@@ -2075,7 +2075,7 @@
                 <Option value="0" name="fixedAspectRatio" type="QString"/>
                 <Option value="1" name="horizontal_anchor_point" type="QString"/>
                 <Option value="Mes icones/Bicycle_park.svg" name="name" type="QString"/>
-                <Option value="0,-1.0588235294117645" name="offset" type="QString"/>
+                <Option value="-0.36029411764705888,-4.68382352941176539" name="offset" type="QString"/>
                 <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
                 <Option value="MM" name="offset_unit" type="QString"/>
                 <Option value="35,35,35,255" name="outline_color" type="QString"/>
@@ -2084,7 +2084,7 @@
                 <Option value="MM" name="outline_width_unit" type="QString"/>
                 <Option name="parameters"/>
                 <Option value="diameter" name="scale_method" type="QString"/>
-                <Option value="3.70588" name="size" type="QString"/>
+                <Option value="5.04412" name="size" type="QString"/>
                 <Option value="3x:0,0,0,0,0,0" name="size_map_unit_scale" type="QString"/>
                 <Option value="MM" name="size_unit" type="QString"/>
                 <Option value="1" name="vertical_anchor_point" type="QString"/>
@@ -2094,7 +2094,7 @@
               <prop k="fixedAspectRatio" v="0"/>
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="Mes icones/Bicycle_park.svg"/>
-              <prop k="offset" v="0,-1.0588235294117645"/>
+              <prop k="offset" v="-0.36029411764705888,-4.68382352941176539"/>
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="35,35,35,255"/>
@@ -2103,7 +2103,7 @@
               <prop k="outline_width_unit" v="MM"/>
               <prop k="parameters" v=""/>
               <prop k="scale_method" v="diameter"/>
-              <prop k="size" v="3.70588"/>
+              <prop k="size" v="5.04412"/>
               <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
@@ -2127,39 +2127,39 @@
             <layer locked="0" enabled="1" pass="0" class="SvgMarker">
               <Option type="Map">
                 <Option value="0" name="angle" type="QString"/>
-                <Option value="165,191,221,255" name="color" type="QString"/>
+                <Option value="69,138,206,255" name="color" type="QString"/>
                 <Option value="0" name="fixedAspectRatio" type="QString"/>
                 <Option value="1" name="horizontal_anchor_point" type="QString"/>
                 <Option value="Mes icones/marker.svg" name="name" type="QString"/>
-                <Option value="0,0" name="offset" type="QString"/>
+                <Option value="0,-3.29411764705882382" name="offset" type="QString"/>
                 <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
                 <Option value="MM" name="offset_unit" type="QString"/>
-                <Option value="0,0,0,255" name="outline_color" type="QString"/>
-                <Option value="0.2" name="outline_width" type="QString"/>
+                <Option value="253,253,253,255" name="outline_color" type="QString"/>
+                <Option value="0.4" name="outline_width" type="QString"/>
                 <Option value="3x:0,0,0,0,0,0" name="outline_width_map_unit_scale" type="QString"/>
                 <Option value="MM" name="outline_width_unit" type="QString"/>
                 <Option name="parameters"/>
                 <Option value="diameter" name="scale_method" type="QString"/>
-                <Option value="10" name="size" type="QString"/>
+                <Option value="14" name="size" type="QString"/>
                 <Option value="3x:0,0,0,0,0,0" name="size_map_unit_scale" type="QString"/>
                 <Option value="MM" name="size_unit" type="QString"/>
                 <Option value="1" name="vertical_anchor_point" type="QString"/>
               </Option>
               <prop k="angle" v="0"/>
-              <prop k="color" v="165,191,221,255"/>
+              <prop k="color" v="69,138,206,255"/>
               <prop k="fixedAspectRatio" v="0"/>
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="Mes icones/marker.svg"/>
-              <prop k="offset" v="0,0"/>
+              <prop k="offset" v="0,-3.29411764705882382"/>
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_width" v="0.2"/>
+              <prop k="outline_color" v="253,253,253,255"/>
+              <prop k="outline_width" v="0.4"/>
               <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="parameters" v=""/>
               <prop k="scale_method" v="diameter"/>
-              <prop k="size" v="10"/>
+              <prop k="size" v="14"/>
               <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
@@ -2178,7 +2178,7 @@
                 <Option value="0" name="fixedAspectRatio" type="QString"/>
                 <Option value="1" name="horizontal_anchor_point" type="QString"/>
                 <Option value="Mes icones/Bicycle_park.svg" name="name" type="QString"/>
-                <Option value="0,-1.17647058823529393" name="offset" type="QString"/>
+                <Option value="-0.41176470588235298,-5.35294117647058787" name="offset" type="QString"/>
                 <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
                 <Option value="MM" name="offset_unit" type="QString"/>
                 <Option value="35,35,35,255" name="outline_color" type="QString"/>
@@ -2187,7 +2187,7 @@
                 <Option value="MM" name="outline_width_unit" type="QString"/>
                 <Option name="parameters"/>
                 <Option value="diameter" name="scale_method" type="QString"/>
-                <Option value="4.11765" name="size" type="QString"/>
+                <Option value="5.76471" name="size" type="QString"/>
                 <Option value="3x:0,0,0,0,0,0" name="size_map_unit_scale" type="QString"/>
                 <Option value="MM" name="size_unit" type="QString"/>
                 <Option value="1" name="vertical_anchor_point" type="QString"/>
@@ -2197,7 +2197,7 @@
               <prop k="fixedAspectRatio" v="0"/>
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="Mes icones/Bicycle_park.svg"/>
-              <prop k="offset" v="0,-1.17647058823529393"/>
+              <prop k="offset" v="-0.41176470588235298,-5.35294117647058787"/>
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="35,35,35,255"/>
@@ -2206,7 +2206,7 @@
               <prop k="outline_width_unit" v="MM"/>
               <prop k="parameters" v=""/>
               <prop k="scale_method" v="diameter"/>
-              <prop k="size" v="4.11765"/>
+              <prop k="size" v="5.76471"/>
               <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
@@ -2232,15 +2232,15 @@
             <layer locked="0" enabled="1" pass="0" class="SvgMarker">
               <Option type="Map">
                 <Option value="0" name="angle" type="QString"/>
-                <Option value="165,191,221,255" name="color" type="QString"/>
+                <Option value="69,138,206,255" name="color" type="QString"/>
                 <Option value="0" name="fixedAspectRatio" type="QString"/>
                 <Option value="1" name="horizontal_anchor_point" type="QString"/>
                 <Option value="Mes icones/marker.svg" name="name" type="QString"/>
-                <Option value="0,0" name="offset" type="QString"/>
+                <Option value="0,-0.80000000000000004" name="offset" type="QString"/>
                 <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
                 <Option value="MM" name="offset_unit" type="QString"/>
-                <Option value="0,0,0,255" name="outline_color" type="QString"/>
-                <Option value="0.2" name="outline_width" type="QString"/>
+                <Option value="253,253,253,255" name="outline_color" type="QString"/>
+                <Option value="0.4" name="outline_width" type="QString"/>
                 <Option value="3x:0,0,0,0,0,0" name="outline_width_map_unit_scale" type="QString"/>
                 <Option value="MM" name="outline_width_unit" type="QString"/>
                 <Option name="parameters"/>
@@ -2251,15 +2251,15 @@
                 <Option value="1" name="vertical_anchor_point" type="QString"/>
               </Option>
               <prop k="angle" v="0"/>
-              <prop k="color" v="165,191,221,255"/>
+              <prop k="color" v="69,138,206,255"/>
               <prop k="fixedAspectRatio" v="0"/>
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="Mes icones/marker.svg"/>
-              <prop k="offset" v="0,0"/>
+              <prop k="offset" v="0,-0.80000000000000004"/>
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_width" v="0.2"/>
+              <prop k="outline_color" v="253,253,253,255"/>
+              <prop k="outline_width" v="0.4"/>
               <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="parameters" v=""/>
@@ -2283,7 +2283,7 @@
                 <Option value="0" name="fixedAspectRatio" type="QString"/>
                 <Option value="1" name="horizontal_anchor_point" type="QString"/>
                 <Option value="Mes icones/Bicycle_park.svg" name="name" type="QString"/>
-                <Option value="0,-0.40000000000000008" name="offset" type="QString"/>
+                <Option value="-0.10000000000000001,-1.30000000000000004" name="offset" type="QString"/>
                 <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
                 <Option value="MM" name="offset_unit" type="QString"/>
                 <Option value="35,35,35,255" name="outline_color" type="QString"/>
@@ -2302,7 +2302,7 @@
               <prop k="fixedAspectRatio" v="0"/>
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="Mes icones/Bicycle_park.svg"/>
-              <prop k="offset" v="0,-0.40000000000000008"/>
+              <prop k="offset" v="-0.10000000000000001,-1.30000000000000004"/>
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="35,35,35,255"/>
@@ -7786,7 +7786,7 @@
       <SelectionColorRedPart type="int">255</SelectionColorRedPart>
     </Gui>
     <Layouts>
-      <lastLayoutExportDir type="QString">D:/Cloud/OneDrive/PRESTATION/Eco Evenement/2021 Lieux culturel/Salle paul fort/bicycle_parking_map/OLD</lastLayoutExportDir>
+      <lastLayoutExportDir type="QString">D:/Cloud/OneDrive/PRESTATION/Eco Evenement/2021 Lieux culturel/Salle paul fort/bicycle_parking_map</lastLayoutExportDir>
     </Layouts>
     <Legend>
       <filterByMap type="bool">false</filterByMap>
@@ -8017,7 +8017,7 @@
         </LayoutItem>
         <GuideCollection visible="1"/>
       </PageCollection>
-      <LayoutItem background="true" itemRotation="0" marginX="0" zValue="12" type="65641" outlineWidthM="0.3,mm" labelText="Vers Centre-Ville : Ligne 3 arrêt Bretagne" visibility="1" excludeFromExports="0" halign="4" id="" marginY="0" valign="128" opacity="1" positionOnPage="63.261,2.37788,mm" size="164.693,17.6841,mm" frameJoinStyle="miter" blendMode="0" position="63.261,2.37788,mm" htmlState="0" groupUuid="" referencePoint="0" templateUuid="{23068acf-a9ac-43a5-bf8d-1491a60c0746}" frame="false" uuid="{23068acf-a9ac-43a5-bf8d-1491a60c0746}" positionLock="false">
+      <LayoutItem background="true" itemRotation="0" marginX="0" zValue="12" type="65641" outlineWidthM="0.3,mm" labelText="🔼  Centre-Ville et Place Bretagne  🔼 " visibility="1" excludeFromExports="0" halign="4" id="" marginY="0" valign="128" opacity="1" positionOnPage="63.261,2.37788,mm" size="164.693,17.6841,mm" frameJoinStyle="miter" blendMode="0" position="63.261,2.37788,mm" htmlState="0" groupUuid="" referencePoint="0" templateUuid="{23068acf-a9ac-43a5-bf8d-1491a60c0746}" frame="false" uuid="{23068acf-a9ac-43a5-bf8d-1491a60c0746}" positionLock="false">
         <FrameColor blue="0" green="0" red="0" alpha="255"/>
         <BackgroundColor blue="255" green="255" red="255" alpha="136"/>
         <LayoutObject>
@@ -8030,10 +8030,10 @@
           </dataDefinedProperties>
           <customproperties/>
         </LayoutObject>
-        <LabelFont description="Open Sans,10,-1,5,50,0,0,0,0,0" style=""/>
+        <LabelFont description="Open Sans,12,-1,5,75,0,0,0,0,0,Bold" style="Bold"/>
         <FontColor blue="0" green="0" red="0" alpha="255"/>
       </LayoutItem>
-      <LayoutItem background="true" itemRotation="90" marginX="0" zValue="11" type="65641" outlineWidthM="0.3,mm" labelText="Vers Place Viarme et Ligne 3" visibility="1" excludeFromExports="0" halign="4" id="" marginY="0" valign="128" opacity="1" positionOnPage="245.638,2.37788,mm" size="131.073,17.6841,mm" frameJoinStyle="miter" blendMode="0" position="245.638,2.37788,mm" htmlState="0" groupUuid="" referencePoint="0" templateUuid="{cf51178f-ddee-4457-b8fa-600e0403933c}" frame="false" uuid="{cf51178f-ddee-4457-b8fa-600e0403933c}" positionLock="false">
+      <LayoutItem background="true" itemRotation="90" marginX="0" zValue="11" type="65641" outlineWidthM="0.3,mm" labelText="🔼 Place Viarme et Ligne 3 🔼 " visibility="1" excludeFromExports="0" halign="4" id="" marginY="0" valign="128" opacity="1" positionOnPage="245.638,2.37788,mm" size="131.073,17.6841,mm" frameJoinStyle="miter" blendMode="0" position="245.638,2.37788,mm" htmlState="0" groupUuid="" referencePoint="0" templateUuid="{cf51178f-ddee-4457-b8fa-600e0403933c}" frame="false" uuid="{cf51178f-ddee-4457-b8fa-600e0403933c}" positionLock="false">
         <FrameColor blue="0" green="0" red="0" alpha="255"/>
         <BackgroundColor blue="255" green="255" red="255" alpha="136"/>
         <LayoutObject>
@@ -8046,10 +8046,10 @@
           </dataDefinedProperties>
           <customproperties/>
         </LayoutObject>
-        <LabelFont description="Open Sans,10,-1,5,50,0,0,0,0,0" style=""/>
+        <LabelFont description="Open Sans,12,-1,5,75,0,0,0,0,0,Bold" style="Bold"/>
         <FontColor blue="0" green="0" red="0" alpha="255"/>
       </LayoutItem>
-      <LayoutItem background="true" itemRotation="-90" marginX="0" zValue="6" type="65641" outlineWidthM="0.3,mm" labelText="Vers 50 Otages et tram Ligne 2" visibility="1" excludeFromExports="0" halign="4" id="" marginY="0" valign="128" opacity="1" positionOnPage="45.5769,133.533,mm" size="130.868,17.6841,mm" frameJoinStyle="miter" blendMode="0" position="45.5769,133.533,mm" htmlState="0" groupUuid="" referencePoint="0" templateUuid="{3d6b0580-12d2-4690-9d1a-4743ff24372c}" frame="false" uuid="{3d6b0580-12d2-4690-9d1a-4743ff24372c}" positionLock="false">
+      <LayoutItem background="true" itemRotation="-90" marginX="0" zValue="6" type="65641" outlineWidthM="0.3,mm" labelText="🔼  50 Otages et Ligne 2 🔼 " visibility="1" excludeFromExports="0" halign="4" id="" marginY="0" valign="128" opacity="1" positionOnPage="45.5769,133.533,mm" size="130.868,17.6841,mm" frameJoinStyle="miter" blendMode="0" position="45.5769,133.533,mm" htmlState="0" groupUuid="" referencePoint="0" templateUuid="{3d6b0580-12d2-4690-9d1a-4743ff24372c}" frame="false" uuid="{3d6b0580-12d2-4690-9d1a-4743ff24372c}" positionLock="false">
         <FrameColor blue="0" green="0" red="0" alpha="255"/>
         <BackgroundColor blue="255" green="255" red="255" alpha="136"/>
         <LayoutObject>
@@ -8062,10 +8062,10 @@
           </dataDefinedProperties>
           <customproperties/>
         </LayoutObject>
-        <LabelFont description="Open Sans,10,-1,5,50,0,0,0,0,0" style=""/>
+        <LabelFont description="Open Sans,12,-1,5,75,0,0,0,0,0,Bold" style="Bold"/>
         <FontColor blue="0" green="0" red="0" alpha="255"/>
       </LayoutItem>
-      <LayoutItem outlineWidthM="0.3,mm" rasterBorderColor="0,0,0,255" wmsLegendHeight="25" title="" symbolWidth="7" templateUuid="{f65ce9a3-3a0d-4018-af5d-55674d777f74}" fontColor="#000000" titleAlignment="1" groupUuid="" equalColumnWidth="1" splitLayer="1" blendMode="0" uuid="{f65ce9a3-3a0d-4018-af5d-55674d777f74}" columnCount="3" frame="false" resizeToContents="1" itemRotation="0" excludeFromExports="0" id="" referencePoint="1" frameJoinStyle="miter" background="false" legendFilterByAtlas="0" size="108.8,8,mm" zValue="4" minSymbolSize="0" symbolHeight="4" type="65642" boxSpace="2" positionOnPage="177.287,135.932,mm" opacity="1" symbolAlignment="1" position="177.287,135.932,mm" maxSymbolSize="0" columnSpace="2" wrapChar="" rasterBorderWidth="0" positionLock="false" wmsLegendWidth="50" rasterBorder="1" visibility="1" lineSpacing="1" map_uuid="{9d645baf-6038-483b-bfa6-4c014cb80328}">
+      <LayoutItem outlineWidthM="0.3,mm" rasterBorderColor="0,0,0,255" wmsLegendHeight="25" title="" symbolWidth="7" templateUuid="{f65ce9a3-3a0d-4018-af5d-55674d777f74}" fontColor="#000000" titleAlignment="1" groupUuid="" equalColumnWidth="1" splitLayer="1" blendMode="0" uuid="{f65ce9a3-3a0d-4018-af5d-55674d777f74}" columnCount="3" frame="false" resizeToContents="1" itemRotation="0" excludeFromExports="0" id="" referencePoint="1" frameJoinStyle="miter" background="false" legendFilterByAtlas="0" size="108.8,12.2,mm" zValue="4" minSymbolSize="0" symbolHeight="4" type="65642" boxSpace="2" positionOnPage="177.287,135.932,mm" opacity="1" symbolAlignment="1" position="177.287,135.932,mm" maxSymbolSize="0" columnSpace="2" wrapChar="" rasterBorderWidth="0" positionLock="false" wmsLegendWidth="50" rasterBorder="1" visibility="1" lineSpacing="1" map_uuid="{9d645baf-6038-483b-bfa6-4c014cb80328}">
         <FrameColor blue="0" green="0" red="0" alpha="255"/>
         <BackgroundColor blue="255" green="255" red="255" alpha="255"/>
         <LayoutObject>
@@ -8102,9 +8102,9 @@
               <property key="legend/title-style" value="hidden"/>
             </customproperties>
           </layer-tree-layer>
-          <layer-tree-layer expanded="1" legend_exp="" legend_split_behavior="0" providerKey="ogr" source="localized:Eco Evenement/2021 Lieux culturel/Salle paul fort/bicycle_parking_map/bicycle_parking.geojson" checked="Qt::Checked" patch_size="-1,-1" name="bicycle_parking" id="bicycle_parking_de7ffb55_d59b_42cf_82a1_5625c66a559f">
+          <layer-tree-layer expanded="1" legend_exp="" legend_split_behavior="0" providerKey="ogr" source="localized:Eco Evenement/2021 Lieux culturel/Salle paul fort/bicycle_parking_map/bicycle_parking.geojson|subset=&quot;payment:account_cards&quot; is NULL" checked="Qt::Checked" patch_size="-1,-1" name="bicycle_parking" id="bicycle_parking_de7ffb55_d59b_42cf_82a1_5625c66a559f">
             <customproperties>
-              <property key="legend/label-0" value="Stationnements vélos"/>
+              <property key="legend/label-0" value="Stationnements vélos&#xa;"/>
               <property key="legend/node-order" value="0"/>
               <property key="legend/title-label" value="Stationnement vélo"/>
               <property key="legend/title-style" value="hidden"/>
@@ -8113,7 +8113,7 @@
           <custom-order enabled="0"/>
         </layer-tree-group>
       </LayoutItem>
-      <LayoutItem outlineWidthM="0.3,mm" numSegments="1" numMapUnitsPerScaleBarUnit="83" subdivisionsHeight="1.5" segmentSizeMode="0" boxContentSpace="1" templateUuid="{f302fcea-16f0-4ba9-9b74-6e3f9f28824e}" alignment="0" groupUuid="" style="Line Ticks Middle" blendMode="0" uuid="{f302fcea-16f0-4ba9-9b74-6e3f9f28824e}" frame="false" unitType="meters" itemRotation="0" excludeFromExports="0" id="" maxBarWidth="150" referencePoint="8" numUnitsPerSegment="83" height="1" frameJoinStyle="miter" background="true" size="200,12.8671,mm" zValue="3" labelBarSpace="2" type="65646" positionOnPage="245.655,146.318,mm" numSegmentsLeft="0" mapUuid="{9d645baf-6038-483b-bfa6-4c014cb80328}" opacity="1" unitLabel="min 🚶" position="245.655,146.318,mm" lineCapStyle="square" minBarWidth="50" positionLock="false" numSubdivisions="1" visibility="1" outlineWidth="0.3" labelVerticalPlacement="0" lineJoinStyle="miter" labelHorizontalPlacement="1" segmentMillimeters="43.0909">
+      <LayoutItem outlineWidthM="0.3,mm" numSegments="1" numMapUnitsPerScaleBarUnit="83" subdivisionsHeight="1.5" segmentSizeMode="0" boxContentSpace="1" templateUuid="{f302fcea-16f0-4ba9-9b74-6e3f9f28824e}" alignment="0" groupUuid="" style="Line Ticks Middle" blendMode="0" uuid="{f302fcea-16f0-4ba9-9b74-6e3f9f28824e}" frame="false" unitType="meters" itemRotation="0" excludeFromExports="0" id="" maxBarWidth="150" referencePoint="8" numUnitsPerSegment="83" height="1" frameJoinStyle="miter" background="true" size="200,12.8671,mm" zValue="3" labelBarSpace="2" type="65646" positionOnPage="245.655,146.318,mm" numSegmentsLeft="0" mapUuid="{9d645baf-6038-483b-bfa6-4c014cb80328}" opacity="1" unitLabel="min 🚶" position="245.655,146.318,mm" lineCapStyle="square" minBarWidth="50" positionLock="false" numSubdivisions="1" visibility="1" outlineWidth="0.3" labelVerticalPlacement="0" lineJoinStyle="miter" labelHorizontalPlacement="1" segmentMillimeters="43.0906">
         <FrameColor blue="0" green="0" red="0" alpha="255"/>
         <BackgroundColor blue="255" green="255" red="255" alpha="128"/>
         <LayoutObject>
@@ -8434,7 +8434,7 @@
           </symbol>
         </fillSymbol2>
       </LayoutItem>
-      <LayoutItem background="false" itemRotation="0" marginX="0" zValue="2" type="65641" outlineWidthM="0.3,mm" labelText="Marché de Talensac" visibility="1" excludeFromExports="0" halign="4" id="" marginY="0" valign="128" opacity="1" positionOnPage="108.964,67.56,mm" size="70.2208,17.6841,mm" frameJoinStyle="miter" blendMode="0" position="108.964,67.56,mm" htmlState="0" groupUuid="" referencePoint="0" templateUuid="{da45816e-3085-4790-b3e3-7fe8801db1f3}" frame="false" uuid="{da45816e-3085-4790-b3e3-7fe8801db1f3}" positionLock="false">
+      <LayoutItem background="false" itemRotation="0" marginX="0" zValue="2" type="65641" outlineWidthM="0.3,mm" labelText="Marché de Talensac" visibility="1" excludeFromExports="0" halign="4" id="" marginY="0" valign="128" opacity="1" positionOnPage="113.39,83.2887,mm" size="70.2208,17.6841,mm" frameJoinStyle="miter" blendMode="0" position="113.39,83.2887,mm" htmlState="0" groupUuid="" referencePoint="0" templateUuid="{da45816e-3085-4790-b3e3-7fe8801db1f3}" frame="false" uuid="{da45816e-3085-4790-b3e3-7fe8801db1f3}" positionLock="false">
         <FrameColor blue="0" green="0" red="0" alpha="255"/>
         <BackgroundColor blue="255" green="255" red="255" alpha="255"/>
         <LayoutObject>
@@ -8463,7 +8463,7 @@
           </dataDefinedProperties>
           <customproperties/>
         </LayoutObject>
-        <Extent xmin="-173715.10383956984151155" xmax="-173148.93010199640411884" ymin="5978047.4615393253043294" ymax="5978454.9372498644515872"/>
+        <Extent xmin="-173720.8743554595275782" xmax="-173154.70061788609018549" ymin="5978003.45917027164250612" ymax="5978410.93488081078976393"/>
         <LayerSet/>
         <AtlasMap atlasDriven="0" scalingMode="2" margin="0.10000000000000001"/>
         <labelBlockingItems/>
@@ -8474,12 +8474,23 @@
       </LayoutItem>
       <customproperties>
         <property key="atlasRasterFormat" value="png"/>
+        <property key="forceVector" value="0"/>
         <property key="imageAntialias" value="true"/>
         <property key="imageCropMarginBottom" value="0"/>
         <property key="imageCropMarginLeft" value="0"/>
         <property key="imageCropMarginRight" value="0"/>
         <property key="imageCropMarginTop" value="0"/>
         <property key="imageCropToContents" value="true"/>
+        <property key="svgCropMarginBottom" value="0"/>
+        <property key="svgCropMarginLeft" value="0"/>
+        <property key="svgCropMarginRight" value="0"/>
+        <property key="svgCropMarginTop" value="0"/>
+        <property key="svgCropToContents" value="true"/>
+        <property key="svgDisableRasterTiles" value="0"/>
+        <property key="svgGroupLayers" value="false"/>
+        <property key="svgIncludeMetadata" value="1"/>
+        <property key="svgSimplify" value="1"/>
+        <property key="svgTextFormat" value="0"/>
       </customproperties>
       <Atlas enabled="0" hideCoverage="0" pageNameExpression="" sortFeatures="0" filterFeatures="0" coverageLayer="" filenamePattern="'output_'||@atlas_featurenumber"/>
     </Layout>
@@ -8487,7 +8498,7 @@
   <Bookmarks/>
   <ProjectViewSettings UseProjectScales="0">
     <Scales/>
-    <DefaultViewExtent xmin="-174423.47465073748026043" xmax="-172900.04585032712202519" ymin="5977812.33838683366775513" ymax="5978863.10727441310882568">
+    <DefaultViewExtent xmin="-174019.35662815303658135" xmax="-173047.36439271210110746" ymin="5977928.33235494326800108" ymax="5978453.71679873298853636">
       <spatialrefsys>
         <wkt>PROJCRS["WGS 84 / Pseudo-Mercator",BASEGEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["Popular Visualisation Pseudo-Mercator",METHOD["Popular Visualisation Pseudo Mercator",ID["EPSG",1024]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["False easting",0,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["World - 85°S to 85°N"],BBOX[-85.06,-180,85.06,180]],ID["EPSG",3857]]</wkt>
         <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0 +lon_0=0 +x_0=0 +y_0=0 +k=1 +units=m +nadgrids=@null +wktext +no_defs</proj4>
