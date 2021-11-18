@@ -17,8 +17,24 @@ http://overpass-turbo.eu/s/k
 
 ### Amélioration des styles 
 
-- Faire un gradient de distance espace public pour remplacer le fond sattélite
-- Faire du fond sattelite seul
-- Incruster des photos
-- Incruster vers ligne 2 vers ligne 3
-- 
+- Faire un gradient de distance espace public pour remplacer le fond satellite
+- Faire du fond satellite seul
+
+
+
+- Incruster des photos des appuis vélos ?
+- Incruster icone transport public : vers ligne 2 vers ligne 3
+
+
+
+
+
+2/12 entre 8h et 12h15
+
+9/12 10h15-12h15
+
+13/12 10h15-12h15
+
+15/12 10h15-12h15
+
+16/12 10h15-12h15 

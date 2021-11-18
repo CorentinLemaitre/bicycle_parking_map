@@ -1,13 +1,17 @@
-# bicycle_parking_map
-Static map to show bicycle parking spot around a specific place
-
-## Context
+# Bicycle parking map
+Static map to show bicycle parking spot around a specific place. 
 
 The goal of this repository is to help produce a map of the bicycle parking to access a specific place. The use case is the [Salle Paul Fort](https://www.openstreetmap.org/node/4484128529) in Nantes. The map is made to be shown in the nearest bicyle parking spot and help people to find one free nearby. 
 
-The map is based on **OpenStreetMap** data and made to be updated easily. Please contribute to OpenStreetMap if bicycle parking are created or modified. [Here you can find the documentation to do it](https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dbicycle_parking).
+Here is the result of the process for this use case :
 
-To use this repository you need the software QGIS.
+![](bicycle_parking_map.png)
+
+## Context
+
+The map is produced with the software **QGIS** and it is based on **OpenStreetMap** data. The strucutre is made to be updated easily. 
+
+If you know that bicycle parking are created or modified please contribute to OpenStreetMap. [Here you can find the documentation to do it](https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dbicycle_parking).
 
 # Step by step 
 
@@ -39,8 +43,6 @@ The zoom tend to be the closest possible zoom.
 
 There is a filter to set to show only accessible bicycle parking, for example there is some private or some that needs a specific card to access. 
 
-
-
 ## Adapt the layout to your context
 
-To keep a ligth map there is few layers. All information about the direction and orientation must be given by hand in the layout. 
+To keep a ligth map there is few layers used in QGIS. All information about the direction and orientation must be given by hand in the layout side panel. Icon can be modified to get your own result. They are all in the `icon/` folder.
