@@ -29,8 +29,18 @@ out center;
 
 Save the result as `bicycle_parking.geojson` to replace the old file.
 
-To give information about distance we need isochrone from openrouteservice. Here is a [link for salle paul fort](https://classic-maps.openrouteservice.org/reach?n1=47.221142&n2=-1.558111&n3=17&a=47.220909,-1.558231&b=2&i=0&j1=10&j2=2&undefined=1&k1=en-US&k2=km). Dowload the file produced and name it `ors-export-polygon.geojson` to replace the existing one.
+To give information about distance we need isochrone from openrouteservice. Here is a [link for salle paul fort](https://classic-maps.openrouteservice.org/reach?n1=47.221142&n2=-1.558111&n3=17&a=47.220909,-1.558231&b=2&i=0&j1=10&j2=2&undefined=1&k1=en-US&k2=km). Download the file produced and name it `ors-export-polygon.geojson` to replace the existing one.
 
 ## Define the styling rules
 
 The goal is to define a style to show bicycle parking nearby. 
+
+The zoom tend to be the closest possible zoom. 
+
+There is a filter to set to show only accessible bicycle parking, for example there is some private or some that needs a specific card to access. 
+
+
+
+## Adapt the layout to your context
+
+To keep a ligth map there is few layers. All information about the direction and orientation must be given by hand in the layout. 

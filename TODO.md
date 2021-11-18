@@ -15,7 +15,7 @@ http://overpass-turbo.eu/s/k
 
 
 
-### Styles 
+### Amélioration des styles 
 
 - Faire un gradient de distance espace public pour remplacer le fond sattélite
 - Faire du fond sattelite seul

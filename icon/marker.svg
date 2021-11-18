@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="marker.svg"
+   id="svg22"
+   version="1.1"
+   width="579.99"
+   viewBox="0 0 579.99 580.45"
+   height="580.45"
+   enable-background="new 0 0 579.99 580.45">
+  <metadata
+     id="metadata28">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs26" />
+  <sodipodi:namedview
+     inkscape:current-layer="svg22"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-9"
+     inkscape:window-x="-9"
+     inkscape:cy="195.2024"
+     inkscape:cx="250.63735"
+     inkscape:zoom="1.3656072"
+     showgrid="false"
+     id="namedview24"
+     inkscape:window-height="1321"
+     inkscape:window-width="2400"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <path
+     sodipodi:nodetypes="ccccc"
+     id="path20"
+     stroke-width="param(outline-width)"
+     stroke-opacity="param(outline-opacity)"
+     stroke="param(outline)"
+     fill-opacity="param(fill-opacity)"
+     fill="param(fill)"
+     d="M 279.83803,38.9269 C 153.09125,38.718674 53.924175,194.63915 138.67207,316.68783 c 71.03231,103.65942 144.11406,206.37745 144.11406,206.37745 0,0 57.00968,-95.63079 135.64719,-206.37745 C 504.95411,194.2747 413.72188,39.515225 279.83803,38.9269 Z" />
+</svg>
